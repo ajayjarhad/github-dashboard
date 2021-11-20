@@ -5,8 +5,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
+import Container from "./components/Container";
 import "./index.css";
-import App from "./App";
 
 const client = new ApolloClient({
   uri: "https://pr-dashboard.hem.staging.canonic.dev/graphql", //Replace this with your own cloned project's URI.
@@ -14,7 +14,7 @@ const client = new ApolloClient({
 });
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App />
+    <Container />
   </ApolloProvider>,
   document.getElementById("root")
 );
