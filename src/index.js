@@ -5,6 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
+//Local dependencies
 import Container from "./components/Container";
 import "./index.css";
 
